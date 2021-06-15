@@ -18,6 +18,9 @@
 		0942A96526722E4B008AF4CF /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0942A96426722E4B008AF4CF /* SearchResultCell.swift */; };
 		0942A98C26737833008AF4CF /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0942A98B26737833008AF4CF /* UIView+Layout.swift */; };
 		0942A98E26738687008AF4CF /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0942A98D26738687008AF4CF /* VerticalStackView.swift */; };
+		0942A9BF2677CFA4008AF4CF /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0942A9BE2677CFA4008AF4CF /* SearchResult.swift */; };
+		0942A9C22678C20C008AF4CF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0942A9C12678C20C008AF4CF /* Service.swift */; };
+		5361F78A5A722D6A8D26C3FD /* Pods_AppStoreJSONApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0293E8FC47E2266D83396B1 /* Pods_AppStoreJSONApi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,11 @@
 		0942A96426722E4B008AF4CF /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		0942A98B26737833008AF4CF /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		0942A98D26738687008AF4CF /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		0942A9BE2677CFA4008AF4CF /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		0942A9C12678C20C008AF4CF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		8243D097C7A3EFDE1395B179 /* Pods-AppStoreJSONApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSONApi.release.xcconfig"; path = "Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi.release.xcconfig"; sourceTree = "<group>"; };
+		B0293E8FC47E2266D83396B1 /* Pods_AppStoreJSONApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreJSONApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7A85934D71819DE0CCBD97 /* Pods-AppStoreJSONApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSONApi.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5361F78A5A722D6A8D26C3FD /* Pods_AppStoreJSONApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,8 @@
 			children = (
 				0942A949267201E6008AF4CF /* AppStoreJSONApi */,
 				0942A948267201E6008AF4CF /* Products */,
+				FF106E66F60B4B7FB3C1E8FA /* Pods */,
+				CF50D002F8976821FE171C12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +77,8 @@
 		0942A949267201E6008AF4CF /* AppStoreJSONApi */ = {
 			isa = PBXGroup;
 			children = (
+				0942A9C02678C1E9008AF4CF /* Service */,
+				0942A9BD2677CF85008AF4CF /* Model */,
 				0942A9662672428F008AF4CF /* Helpers */,
 				0942A96326722E16008AF4CF /* View */,
 				0942A96026722504008AF4CF /* Controller */,
@@ -106,6 +119,40 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0942A9BD2677CF85008AF4CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0942A9BE2677CFA4008AF4CF /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0942A9C02678C1E9008AF4CF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0942A9C12678C20C008AF4CF /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CF50D002F8976821FE171C12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0293E8FC47E2266D83396B1 /* Pods_AppStoreJSONApi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF106E66F60B4B7FB3C1E8FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD7A85934D71819DE0CCBD97 /* Pods-AppStoreJSONApi.debug.xcconfig */,
+				8243D097C7A3EFDE1395B179 /* Pods-AppStoreJSONApi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0942A95B267201E8008AF4CF /* Build configuration list for PBXNativeTarget "AppStoreJSONApi" */;
 			buildPhases = (
+				29F639612179624E9B96BDD9 /* [CP] Check Pods Manifest.lock */,
 				0942A943267201E6008AF4CF /* Sources */,
 				0942A944267201E6008AF4CF /* Frameworks */,
 				0942A945267201E6008AF4CF /* Resources */,
+				7483D0F6B04F9CD3972B7C2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,17 +220,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29F639612179624E9B96BDD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppStoreJSONApi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7483D0F6B04F9CD3972B7C2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0942A943267201E6008AF4CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0942A95F26720319008AF4CF /* BaseTabBarController.swift in Sources */,
+				0942A9BF2677CFA4008AF4CF /* SearchResult.swift in Sources */,
 				0942A962267225B9008AF4CF /* AppSearchController.swift in Sources */,
 				0942A94F267201E6008AF4CF /* ViewController.swift in Sources */,
 				0942A94B267201E6008AF4CF /* AppDelegate.swift in Sources */,
 				0942A96526722E4B008AF4CF /* SearchResultCell.swift in Sources */,
 				0942A98E26738687008AF4CF /* VerticalStackView.swift in Sources */,
+				0942A9C22678C20C008AF4CF /* Service.swift in Sources */,
 				0942A98C26737833008AF4CF /* UIView+Layout.swift in Sources */,
 				0942A94D267201E6008AF4CF /* SceneDelegate.swift in Sources */,
 			);
@@ -327,6 +420,7 @@
 		};
 		0942A95C267201E8008AF4CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7A85934D71819DE0CCBD97 /* Pods-AppStoreJSONApi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,6 +440,7 @@
 		};
 		0942A95D267201E8008AF4CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8243D097C7A3EFDE1395B179 /* Pods-AppStoreJSONApi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

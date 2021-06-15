@@ -40,24 +40,24 @@ class BaseTabBarController: UITabBarController {
 
 //MARK: - To generate a swiftUIPreview
 
-struct BaseTabBarController_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        Container().edgesIgnoringSafeArea(.all)
-    }
-    
-    struct Container: UIViewControllerRepresentable {
-        func makeUIViewController(context: Context) -> BaseTabBarController {
-            BaseTabBarController()
-        }
-        
-        func updateUIViewController(_ uiViewController: BaseTabBarController, context: Context) {
-            
-        }
-        
-        typealias UIViewControllerType = BaseTabBarController
-        
-    }
-}
+//struct BaseTabBarController_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//        Container().edgesIgnoringSafeArea(.all)
+//    }
+//
+//    struct Container: UIViewControllerRepresentable {
+//        func makeUIViewController(context: Context) -> BaseTabBarController {
+//            BaseTabBarController()
+//        }
+//
+//        func updateUIViewController(_ uiViewController: BaseTabBarController, context: Context) {
+//
+//        }
+//
+//        typealias UIViewControllerType = BaseTabBarController
+//
+//    }
+//}
 
 

@@ -52,6 +52,9 @@
 		09690C96269079C50003FDC2 /* TodayMultipleAppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C95269079C50003FDC2 /* TodayMultipleAppsController.swift */; };
 		09690C9826907AB50003FDC2 /* MultipleAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C9726907AB50003FDC2 /* MultipleAppCell.swift */; };
 		09690C9A269331C30003FDC2 /* BackEnableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C99269331C30003FDC2 /* BackEnableNavigationController.swift */; };
+		09690C9D2695C6730003FDC2 /* MusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C9C2695C6730003FDC2 /* MusicController.swift */; };
+		09690CA02695C7990003FDC2 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C9F2695C7990003FDC2 /* TrackCell.swift */; };
+		09690CA22695CDF90003FDC2 /* MusicLoadingFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690CA12695CDF90003FDC2 /* MusicLoadingFooter.swift */; };
 		5361F78A5A722D6A8D26C3FD /* Pods_AppStoreJSONApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0293E8FC47E2266D83396B1 /* Pods_AppStoreJSONApi.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +106,9 @@
 		09690C95269079C50003FDC2 /* TodayMultipleAppsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMultipleAppsController.swift; sourceTree = "<group>"; };
 		09690C9726907AB50003FDC2 /* MultipleAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleAppCell.swift; sourceTree = "<group>"; };
 		09690C99269331C30003FDC2 /* BackEnableNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackEnableNavigationController.swift; sourceTree = "<group>"; };
+		09690C9C2695C6730003FDC2 /* MusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicController.swift; sourceTree = "<group>"; };
+		09690C9F2695C7990003FDC2 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		09690CA12695CDF90003FDC2 /* MusicLoadingFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLoadingFooter.swift; sourceTree = "<group>"; };
 		8243D097C7A3EFDE1395B179 /* Pods-AppStoreJSONApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSONApi.release.xcconfig"; path = "Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi.release.xcconfig"; sourceTree = "<group>"; };
 		B0293E8FC47E2266D83396B1 /* Pods_AppStoreJSONApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreJSONApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7A85934D71819DE0CCBD97 /* Pods-AppStoreJSONApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSONApi.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 		0942A96026722504008AF4CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				09690C9B2695C65E0003FDC2 /* Music */,
 				09690C83268E08190003FDC2 /* Today */,
 				0942A9CE267A4CD3008AF4CF /* Search */,
 				0942A9C9267A4A28008AF4CF /* Apps */,
@@ -173,6 +180,7 @@
 		0942A96326722E16008AF4CF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09690C9E2695C7840003FDC2 /* Music */,
 				09690C86268E097D0003FDC2 /* Today */,
 				0942A9CF267A4F31008AF4CF /* Apps */,
 				0942A96426722E4B008AF4CF /* SearchResultCell.swift */,
@@ -285,6 +293,23 @@
 				09690C9726907AB50003FDC2 /* MultipleAppCell.swift */,
 			);
 			path = Today;
+			sourceTree = "<group>";
+		};
+		09690C9B2695C65E0003FDC2 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				09690C9C2695C6730003FDC2 /* MusicController.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		09690C9E2695C7840003FDC2 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				09690C9F2695C7990003FDC2 /* TrackCell.swift */,
+				09690CA12695CDF90003FDC2 /* MusicLoadingFooter.swift */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 		CF50D002F8976821FE171C12 /* Frameworks */ = {
@@ -427,6 +452,7 @@
 				09690C9426906E5E0003FDC2 /* BaseTodayCell.swift in Sources */,
 				0942A962267225B9008AF4CF /* AppSearchController.swift in Sources */,
 				0942A94F267201E6008AF4CF /* ViewController.swift in Sources */,
+				09690CA22695CDF90003FDC2 /* MusicLoadingFooter.swift in Sources */,
 				09690C88268E09920003FDC2 /* TodayCell.swift in Sources */,
 				0942A94B267201E6008AF4CF /* AppDelegate.swift in Sources */,
 				0942A9D1267A4F69008AF4CF /* AppsGroupCell.swift in Sources */,
@@ -442,8 +468,10 @@
 				0942A96526722E4B008AF4CF /* SearchResultCell.swift in Sources */,
 				09690C73268B822B0003FDC2 /* AppDetailController.swift in Sources */,
 				0942A98E26738687008AF4CF /* VerticalStackView.swift in Sources */,
+				09690C9D2695C6730003FDC2 /* MusicController.swift in Sources */,
 				0942A9D9267BB461008AF4CF /* AppsPageHeader.swift in Sources */,
 				0942A9C22678C20C008AF4CF /* Service.swift in Sources */,
+				09690CA02695C7990003FDC2 /* TrackCell.swift in Sources */,
 				0942A9DB267BB8B6008AF4CF /* AppHeaderHorizontalController.swift in Sources */,
 				09690C7E268C907B0003FDC2 /* ReviewsController.swift in Sources */,
 				0942A98C26737833008AF4CF /* UIView+Layout.swift in Sources */,

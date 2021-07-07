@@ -47,6 +47,11 @@
 		09690C8C268F357A0003FDC2 /* AppFullscreenDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C8B268F357A0003FDC2 /* AppFullscreenDescriptionCell.swift */; };
 		09690C8E268F48C40003FDC2 /* AppFullscreenHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C8D268F48C40003FDC2 /* AppFullscreenHeaderCell.swift */; };
 		09690C90268F6A9F0003FDC2 /* TodayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C8F268F6A9F0003FDC2 /* TodayItem.swift */; };
+		09690C92269044140003FDC2 /* TodayMultipleAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C91269044140003FDC2 /* TodayMultipleAppCell.swift */; };
+		09690C9426906E5E0003FDC2 /* BaseTodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C9326906E5E0003FDC2 /* BaseTodayCell.swift */; };
+		09690C96269079C50003FDC2 /* TodayMultipleAppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C95269079C50003FDC2 /* TodayMultipleAppsController.swift */; };
+		09690C9826907AB50003FDC2 /* MultipleAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C9726907AB50003FDC2 /* MultipleAppCell.swift */; };
+		09690C9A269331C30003FDC2 /* BackEnableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C99269331C30003FDC2 /* BackEnableNavigationController.swift */; };
 		5361F78A5A722D6A8D26C3FD /* Pods_AppStoreJSONApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0293E8FC47E2266D83396B1 /* Pods_AppStoreJSONApi.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +98,11 @@
 		09690C8B268F357A0003FDC2 /* AppFullscreenDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFullscreenDescriptionCell.swift; sourceTree = "<group>"; };
 		09690C8D268F48C40003FDC2 /* AppFullscreenHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFullscreenHeaderCell.swift; sourceTree = "<group>"; };
 		09690C8F268F6A9F0003FDC2 /* TodayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayItem.swift; sourceTree = "<group>"; };
+		09690C91269044140003FDC2 /* TodayMultipleAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMultipleAppCell.swift; sourceTree = "<group>"; };
+		09690C9326906E5E0003FDC2 /* BaseTodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTodayCell.swift; sourceTree = "<group>"; };
+		09690C95269079C50003FDC2 /* TodayMultipleAppsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMultipleAppsController.swift; sourceTree = "<group>"; };
+		09690C9726907AB50003FDC2 /* MultipleAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleAppCell.swift; sourceTree = "<group>"; };
+		09690C99269331C30003FDC2 /* BackEnableNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackEnableNavigationController.swift; sourceTree = "<group>"; };
 		8243D097C7A3EFDE1395B179 /* Pods-AppStoreJSONApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSONApi.release.xcconfig"; path = "Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi.release.xcconfig"; sourceTree = "<group>"; };
 		B0293E8FC47E2266D83396B1 /* Pods_AppStoreJSONApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreJSONApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7A85934D71819DE0CCBD97 /* Pods-AppStoreJSONApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSONApi.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,8 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				0942A9C02678C1E9008AF4CF /* Service */,
-				0942A9BD2677CF85008AF4CF /* Model */,
 				0942A9662672428F008AF4CF /* Helpers */,
+				0942A9BD2677CF85008AF4CF /* Model */,
 				0942A96326722E16008AF4CF /* View */,
 				0942A96026722504008AF4CF /* Controller */,
 				0942A94A267201E6008AF4CF /* AppDelegate.swift */,
@@ -258,6 +268,8 @@
 			children = (
 				09690C84268E08320003FDC2 /* TodayController.swift */,
 				09690C89268F30E50003FDC2 /* AppFullscreenController.swift */,
+				09690C95269079C50003FDC2 /* TodayMultipleAppsController.swift */,
+				09690C99269331C30003FDC2 /* BackEnableNavigationController.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -268,6 +280,9 @@
 				09690C87268E09920003FDC2 /* TodayCell.swift */,
 				09690C8B268F357A0003FDC2 /* AppFullscreenDescriptionCell.swift */,
 				09690C8D268F48C40003FDC2 /* AppFullscreenHeaderCell.swift */,
+				09690C91269044140003FDC2 /* TodayMultipleAppCell.swift */,
+				09690C9326906E5E0003FDC2 /* BaseTodayCell.swift */,
+				09690C9726907AB50003FDC2 /* MultipleAppCell.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -409,6 +424,7 @@
 				0942A9CB267A4A42008AF4CF /* AppsPageController.swift in Sources */,
 				0942A9BF2677CFA4008AF4CF /* SearchResult.swift in Sources */,
 				09690C7A268C7D330003FDC2 /* PreviewScreenshotsController.swift in Sources */,
+				09690C9426906E5E0003FDC2 /* BaseTodayCell.swift in Sources */,
 				0942A962267225B9008AF4CF /* AppSearchController.swift in Sources */,
 				0942A94F267201E6008AF4CF /* ViewController.swift in Sources */,
 				09690C88268E09920003FDC2 /* TodayCell.swift in Sources */,
@@ -419,7 +435,10 @@
 				09690C90268F6A9F0003FDC2 /* TodayItem.swift in Sources */,
 				09690C8E268F48C40003FDC2 /* AppFullscreenHeaderCell.swift in Sources */,
 				09690C6E268B54330003FDC2 /* HorizontalSnappingController.swift in Sources */,
+				09690C9A269331C30003FDC2 /* BackEnableNavigationController.swift in Sources */,
 				09690C70268B61210003FDC2 /* BetterSnappingLayout.swift in Sources */,
+				09690C92269044140003FDC2 /* TodayMultipleAppCell.swift in Sources */,
+				09690C96269079C50003FDC2 /* TodayMultipleAppsController.swift in Sources */,
 				0942A96526722E4B008AF4CF /* SearchResultCell.swift in Sources */,
 				09690C73268B822B0003FDC2 /* AppDetailController.swift in Sources */,
 				0942A98E26738687008AF4CF /* VerticalStackView.swift in Sources */,
@@ -430,6 +449,7 @@
 				0942A98C26737833008AF4CF /* UIView+Layout.swift in Sources */,
 				09690C85268E08320003FDC2 /* TodayController.swift in Sources */,
 				0942A9CD267A4C2C008AF4CF /* BaseListController.swift in Sources */,
+				09690C9826907AB50003FDC2 /* MultipleAppCell.swift in Sources */,
 				09690C6A268747740003FDC2 /* AppGroup.swift in Sources */,
 				09690C82268DBA640003FDC2 /* Reviews.swift in Sources */,
 				09690C76268B8AB60003FDC2 /* AppDetailCell.swift in Sources */,

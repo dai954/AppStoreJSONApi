@@ -55,6 +55,7 @@
 		09690C9D2695C6730003FDC2 /* MusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C9C2695C6730003FDC2 /* MusicController.swift */; };
 		09690CA02695C7990003FDC2 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690C9F2695C7990003FDC2 /* TrackCell.swift */; };
 		09690CA22695CDF90003FDC2 /* MusicLoadingFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690CA12695CDF90003FDC2 /* MusicLoadingFooter.swift */; };
+		09690CA52695E7FB0003FDC2 /* AppsCompositionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09690CA42695E7FB0003FDC2 /* AppsCompositionalView.swift */; };
 		5361F78A5A722D6A8D26C3FD /* Pods_AppStoreJSONApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0293E8FC47E2266D83396B1 /* Pods_AppStoreJSONApi.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		09690C9C2695C6730003FDC2 /* MusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicController.swift; sourceTree = "<group>"; };
 		09690C9F2695C7990003FDC2 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		09690CA12695CDF90003FDC2 /* MusicLoadingFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLoadingFooter.swift; sourceTree = "<group>"; };
+		09690CA42695E7FB0003FDC2 /* AppsCompositionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCompositionalView.swift; sourceTree = "<group>"; };
 		8243D097C7A3EFDE1395B179 /* Pods-AppStoreJSONApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSONApi.release.xcconfig"; path = "Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi.release.xcconfig"; sourceTree = "<group>"; };
 		B0293E8FC47E2266D83396B1 /* Pods_AppStoreJSONApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreJSONApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7A85934D71819DE0CCBD97 /* Pods-AppStoreJSONApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSONApi.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreJSONApi/Pods-AppStoreJSONApi.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 		0942A9C9267A4A28008AF4CF /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				09690CA32695E7C20003FDC2 /* Compositional */,
 				09690C71268B820E0003FDC2 /* Details */,
 				0942A9CA267A4A42008AF4CF /* AppsPageController.swift */,
 				0942A9D2267A659A008AF4CF /* AppsHorizontalController.swift */,
@@ -310,6 +313,14 @@
 				09690CA12695CDF90003FDC2 /* MusicLoadingFooter.swift */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		09690CA32695E7C20003FDC2 /* Compositional */ = {
+			isa = PBXGroup;
+			children = (
+				09690CA42695E7FB0003FDC2 /* AppsCompositionalView.swift */,
+			);
+			path = Compositional;
 			sourceTree = "<group>";
 		};
 		CF50D002F8976821FE171C12 /* Frameworks */ = {
@@ -459,6 +470,7 @@
 				09690C8C268F357A0003FDC2 /* AppFullscreenDescriptionCell.swift in Sources */,
 				0942A9D7267BA703008AF4CF /* Extension.swift in Sources */,
 				09690C90268F6A9F0003FDC2 /* TodayItem.swift in Sources */,
+				09690CA52695E7FB0003FDC2 /* AppsCompositionalView.swift in Sources */,
 				09690C8E268F48C40003FDC2 /* AppFullscreenHeaderCell.swift in Sources */,
 				09690C6E268B54330003FDC2 /* HorizontalSnappingController.swift in Sources */,
 				09690C9A269331C30003FDC2 /* BackEnableNavigationController.swift in Sources */,

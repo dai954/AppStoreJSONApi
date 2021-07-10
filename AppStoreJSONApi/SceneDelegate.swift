@@ -26,6 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             let navController = BaseTabBarController()
+//            let navController = UINavigationController(rootViewController: CompositionalController())
             window.rootViewController = navController
             
             self.window = window
